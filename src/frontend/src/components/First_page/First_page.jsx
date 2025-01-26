@@ -4,7 +4,7 @@ import front_image from '../../assets/face_detection1.jpg';
 function FirstPage() {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center h-screen bg-gray-200 relative">
+      <div className="flex flex-col md:flex-row items-center bg-gray-200 relative w-auto h-auto md:w-full md:h-screen">
         {/* Text Section */}
         <div className="text-center md:text-left md:w-1/2 px-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">

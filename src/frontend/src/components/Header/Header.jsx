@@ -13,7 +13,7 @@ function Header() {
                  <strong className='text-4xl'>D</strong>etectify
                  <img src={first_image} className='w-15 hover:scale-125 transition-transform duration-300 ' alt="" />
             </div>
-            <ul className='flex space-x-16 items-center px-10 py-4 text-xl font-medium'>
+            <ul className='hidden sm:flex space-x-16 items-center px-10 py-4 text-xl font-medium'>
               <li>Home</li>
               <li>About</li>
               <li>Services</li>
