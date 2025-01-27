@@ -4,9 +4,9 @@ import first_image from '../../assets/detectify_image.png';
 function Header() {
   return (
     <>
-    <header className='sticky top-0 z-10 '>
+    <header className='sticky top-0  z-50'>
         
-        <nav className='bg-gray-200 h-20  shadow-md'>
+        <nav className='bg-white h-20  shadow-md'>
           <div className='flex  items-center justify-between'>
             <div className=' flex items-center px-10 py-4 text-2xl  font-medium  '>
                  

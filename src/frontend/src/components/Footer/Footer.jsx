@@ -13,14 +13,31 @@ export default function Footer() {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0 flex items-center md:px-11">
                         <a href="" className='text-2xl font-medium hover:underline'><strong className='text-4xl'>D</strong>etectify</a>
-                    
                         <a href="/" className="flex items-center">
                             <img
                                 src={image}
-                                className="mr-3 h-16"
+                                className="mr-3 h-17"
                                 alt="Logo"
                             />
                         </a>
+                        <form  className="relative w-full max-w-md ml-10  ">
+                                <input
+                                    required
+                                    type="text"
+                                    placeholder="Enter your email"
+                                   className="border-2 border-gray-600  rounded-full px-4 py-2 w-full pr-20 hover:focus"
+                                />
+                               <button
+                                 type="submit"
+                                 className="absolute right-0 top-0 bottom-0 m-1 px-4 py-1 bg-black text-white font-bold rounded-full hover:bg-pink-600  transition duration-300 border-none hover:cursor-pointer "
+                               >
+                               Subscribe
+                               </button>
+                       </form>
+                       
+          
+                        
+                        
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
@@ -33,7 +50,7 @@ export default function Footer() {
                                     <a href="#" className="hover:underline">About</a>
                                 </li>
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline">Contact</a>
+                                    <a href="#" className="hover:underline ">Contact</a>
                                 </li>
                                 
                             </ul>
