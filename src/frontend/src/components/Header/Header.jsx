@@ -19,7 +19,7 @@ function Header() {
               <li>Services</li>
               
             </ul>
-            <button className='px-4 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-600 transition duration-300 flex mr-11 focus:ring-2 focus:ring-blue-500 focus:outline-none'>Contact</button>
+            <button className='px-4 py-2  text-white font-bold rounded  flex mr-11 focus:ring-2 focus:ring-blue-500 focus:outline-none   bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500'>Contact</button>
           </div>
         </nav>
     </header>
