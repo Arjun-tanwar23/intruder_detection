@@ -13,7 +13,8 @@ function App() {
   return (
     <>
       <Header/>
-      <Freq/>
+      <Profile/>
+      <Footer/>
       
     </>
   )

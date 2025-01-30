@@ -1,5 +1,6 @@
 import React from 'react'
 import avtar from '../../assets/avtar_image.png'
+import profile from '../../assets/profile2_image.jpg'
 
 function Profile() {
   return (
@@ -17,8 +18,13 @@ function Profile() {
         </div>
       </div>
 
-      <form className='bg-white shadow-lg rounded-lg p-6 w-full max-w-md m-4'>
-        <div className='mb-4'>
+      <form   className='bg-white shadow-lg rounded-lg p-6 w-full max-w-md m-4'
+         style={{ backgroundImage:`url(${profile})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: 0.9,
+                  }}>
+        <div className='mb-4 '>
           <p className='text-center font-bold text-2xl hover:underline'>Account information</p>
           <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='username'>
             Username

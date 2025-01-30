@@ -49,7 +49,7 @@ function About() {
         
         <div className='w-full h-full mt-20'>
           <div className='text-center space-y-2'>
-            <h1 className='font-bold text-2xl text-orange-500'>Cocoa from the farms</h1>
+            <h1 className='font-bold text-2xl text-orange-500 hover:underline'>Cocoa from the farms</h1>
             <p className='opacity-50 w-1/2 mx-auto'>
               Our cocoa is sourced from the best farms in Tamil Nadu. We believe in quality and freshness. We have partnered with farmers to ensure the best cocoa for our products.
             </p>
