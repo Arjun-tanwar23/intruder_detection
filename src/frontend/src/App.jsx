@@ -13,7 +13,8 @@ function App() {
   return (
     <>
       <Header/>
-      <Profile/>
+      <First_page/>
+      <About/>
       <Footer/>
       
     </>
