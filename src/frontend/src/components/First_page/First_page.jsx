@@ -1,6 +1,7 @@
 import React from 'react';
 import front_image from '../../assets/face_detection1.jpg';
 import demo from '../../assets/face_detection2.jpg';
+import { NavLink } from 'react-router-dom';
 
 
 function FirstPage() {
@@ -13,10 +14,13 @@ function FirstPage() {
               Welcome to <strong className=' hover:text-blue-800 transition-all '>Detectify</strong>
             </h1>
           <div className="relative">
-            <button className="hover:cursor-pointer relative z-10 px-11 py-2 text-red-500 font-medium border-2 border-blue-700 rounded-3xl transition duration-500 ease-in-out group overflow-hidden hover:text-white">
+            <NavLink to="/Profile" className="hover:cursor-pointer relative z-10 px-11 py-2 text-red-500 font-medium border-2 border-blue-700 rounded-3xl transition duration-500 ease-in-out group overflow-hidden hover:text-white">
+            <button>
               Get Started
               <div className="absolute inset-0 bg-blue-600 h-full w-0 rounded-2xl transition-all duration-500 ease-in-out group-hover:w-full group-hover:bg-blue-500 z-[-1]"></div>
             </button>
+            </NavLink>
+            
           </div>
           <p className="text-lg md:text-2xl font-medium hover:underline ">
             Your one-stop solution for Intruder Detection
