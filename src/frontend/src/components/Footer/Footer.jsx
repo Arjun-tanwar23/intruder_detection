@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../assets/detectify_image.png';
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -43,15 +44,22 @@ export default function Footer() {
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
+                                
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline">Home</a>
+                                    <Link to='/'><a href="#" className="hover:underline">Home</a></Link>  
                                 </li>
+                                
+                                
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline">About</a>
+                                    <Link to='/'><a href="#" className="hover:underline">About</a></Link>
                                 </li>
+                            
+                               
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline ">Contact</a>
+                                    <Link to='/'><a href="#" className="hover:underline ">Contact</a></Link>
                                 </li>
+                                
+                                
                                 
                             </ul>
                         </div>
