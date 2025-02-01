@@ -6,7 +6,7 @@ function Header() {
     <>
     <header className='sticky top-0  z-50'>
         
-        <nav className='bg-white h-20  shadow-md'>
+        <nav className=' h-20  shadow-md bg-white'>
           <div className='flex  items-center justify-between'>
             <div className=' flex items-center px-10 py-4 text-2xl  font-medium  '>
                  

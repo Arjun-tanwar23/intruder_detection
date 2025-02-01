@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Profile from './components/Main/profile'
 import About from './components/About/About'
 import Freq from './components/Freq/Freq.jsx'
+import Contact from './components/Contact/Contact'
 
 function App() {
   
@@ -15,6 +16,9 @@ function App() {
       <Header/>
       <First_page/>
       <About/>
+      <Freq/>
+      <Contact/>
+      <Profile/>
       <Footer/>
       
     </>

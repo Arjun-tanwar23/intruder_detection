@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../../assets/face_detection1.jpg';
 
+
 function About() {
   return (
     <>
@@ -8,9 +9,9 @@ function About() {
         <div className='w-full h-full flex flex-col justify-center'>
           <div className='text-center space-y-3 m-10'>
             <h2 className='font-semibold text-2xl text-orange-500'>
-              <span className='font-bold text-4xl'>#</span>ourJourneyStart
+              <span className='font-bold text-4xl '>#</span>ourJourneyStart
             </h2>
-            <h1 className='font-bold text-3xl'>WHAT'S A DETECTIFY Start?</h1>
+            <h1 className='font-bold text-3xl font-[Poppins]'>WHAT'S A DETECTIFY Start?</h1>
             <p className='text-center text-gray-500'>
               Our journey has evolved from humble beginnings. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos odit eum maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, vitae.
             </p>
@@ -49,7 +50,7 @@ function About() {
         
         <div className='w-full h-full mt-20'>
           <div className='text-center space-y-2'>
-            <h1 className='font-bold text-2xl text-orange-500 hover:underline'>Cocoa from the farms</h1>
+            <h1 className='font-bold text-2xl text-orange-500 hover:underline font-[Poppins]'>Cocoa from the farms</h1>
             <p className='opacity-50 w-1/2 mx-auto'>
               Our cocoa is sourced from the best farms in Tamil Nadu. We believe in quality and freshness. We have partnered with farmers to ensure the best cocoa for our products.
             </p>
