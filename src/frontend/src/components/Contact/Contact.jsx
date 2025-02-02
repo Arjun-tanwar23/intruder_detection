@@ -60,8 +60,8 @@ function Contact() {
         </form>
       </div>
 
-      <div className='bg-white shadow-lg rounded-lg p-6 w-full max-w-md m-4'>
-        <h1 className='text-3xl font-bold mb-4'>Contact <strong>Us</strong></h1>
+      <div className='bg-white shadow-lg rounded-lg p-6 w-full max-w-md m-4 '>
+        <h1 className='text-3xl font-bold mb-4'>Contact <strong className='text-blue-700'>Us</strong></h1>
         <p className='text-gray-700 mb-4'>
           For questions, technical assistance, or collaboration opportunities, please reach out via the contact information provided below.
         </p>
@@ -69,15 +69,15 @@ function Contact() {
         <div className='space-y-4'>
           <div className='flex items-center space-x-2'>
             <FontAwesomeIcon className='text-blue-950' icon={faPhone} />
-            <h2 className='text-gray-700'>+123-456-7890</h2>
+            <h2 className='text-gray-700 hover:text-blue-700 cursor-pointer'>+123-456-7890</h2>
           </div>
           <div className='flex items-center space-x-2'>
             <FontAwesomeIcon className='text-blue-950' icon={faEnvelope} />
-            <p className='text-gray-700'>hello@reallygreatsite.com</p>
+            <p className='text-gray-700 hover:text-blue-700 cursor-pointer'>hello@reallygreatsite.com</p>
           </div>
           <div className='flex items-center space-x-2'>
             <FontAwesomeIcon className='text-blue-950' icon={faLocationDot} />
-            <address className='text-gray-700'>123 Anywhere St, Any City, ST 12345</address>
+            <address className='text-gray-700 hover:text-blue-700'>123 Anywhere St, Any City, ST 12345</address>
           </div>
         </div>
       </div>

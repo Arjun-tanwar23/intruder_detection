@@ -7,14 +7,14 @@ import { NavLink } from 'react-router-dom';
 function FirstPage() {
   return (
     <>
-      <div className="  flex flex-col md:flex-row items-center bg-gray-200 relative w-auto h-auto md:w-full md:h-screen " >
+      <div className="  flex flex-col md:flex-row items-center bg-gray-200 relative w-auto h-screen md:w-full md:h-screen " >
         {/* Text Section */}
-        <div className="text-center md:text-left md:w-1/2 px-6">
+        <div className="text-center md:text-left md:w-1/2 px-6 py-6">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 ">
               Welcome to <strong className=' hover:text-blue-800 transition-all '>Detectify</strong>
             </h1>
-          <div className="relative">
-            <NavLink to="/Profile" className="hover:cursor-pointer relative z-10 px-11 py-2 text-red-500 font-medium border-2 border-blue-700 rounded-3xl transition duration-500 ease-in-out group overflow-hidden hover:text-white">
+          <div className="relative py-5">
+            <NavLink to="/Profile" className="hover:cursor-pointer relative z-10 px-11 py-2 text-red-500 font-medium border-2 border-blue-700 rounded-3xl transition duration-500 ease-in-out group overflow-hidden hover:text-white ">
             <button>
               Get Started
               <div className="absolute inset-0 bg-blue-600 h-full w-0 rounded-2xl transition-all duration-500 ease-in-out group-hover:w-full group-hover:bg-blue-500 z-[-1]"></div>
