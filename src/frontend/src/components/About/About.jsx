@@ -18,29 +18,29 @@ function About() {
           </div>
           
           <div className='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 p-4 gap-4'>
-            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-orange-500 group transition-all duration-300'>
-              <h1 className='text-orange-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>On the streets</h1>
+            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
+              <h1 className='text-blue-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>On the streets</h1>
               <p className='text-black mt-5 opacity-50 group-hover:text-white'>
                 The ride started from a simple idea and fire in the belly to do something unconventional. Every evening after office, we stood outside the metro station in Delhi to sell our freshly made hot chocolate. Crazy days!
               </p>
             </div>
 
-            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-orange-500 group transition-all duration-300'>
-              <h1 className='text-orange-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>30 cups a day</h1>
+            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
+              <h1 className='text-blue-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>30 cups a day</h1>
               <p className='text-black mt-5 opacity-50 group-hover:text-white'>
                 After few weeks of selling on the streets, we collaborated with kiosks. But we were able to sell less than 30-40 cups a day. We were doing something wrong? But before we figure out, pandemic shut us down completely.
               </p>
             </div>
 
-            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-orange-500 group transition-all duration-300'>
-              <h1 className='text-orange-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>5M+ cups sold</h1>
+            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
+              <h1 className='text-blue-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>5M+ cups sold</h1>
               <p className='text-black mt-5 opacity-50 group-hover:text-white'>
                 We spent our lockdown to become the best at our product. In Nov 2020, we launched online with high energy. Today, people love Tiggle and we have a powerful community and are delivering happiness each day. 🙈!
               </p>
             </div>
 
-            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-orange-500 group transition-all duration-300'>
-              <h1 className='text-orange-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>Farm and Team</h1>
+            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
+              <h1 className='text-blue-600 font-bold text-4xl mt-5 group-hover:text-white transition-all duration-300'>Farm and Team</h1>
               <p className='text-black mt-5 opacity-50 group-hover:text-white'>
                 No more a one-man army. We partnered with farmers in Tamil Nadu to source one of India's best cocoa. We have skilled women at our unit in Agra to produce fresh Tiggle packets. And many awesome folks in our virtual office.
               </p>
@@ -56,13 +56,13 @@ function About() {
             </p>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10'>
-            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-orange-500 group transition-all duration-300'>
+            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
               <img src={image} alt="Farm 1" className='w-full h-full object-cover rounded-lg' />
             </div>
-            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-orange-500 group transition-all duration-300'>
+            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
               <img src={image} alt="Farm 2" className='w-full h-full object-cover rounded-lg' />
             </div>
-            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-orange-500 group transition-all duration-300'>
+            <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
               <img src={image} alt="Farm 3" className='w-full h-full object-cover rounded-lg' />
             </div>
           </div>
