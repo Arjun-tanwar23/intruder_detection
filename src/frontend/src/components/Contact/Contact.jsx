@@ -1,18 +1,34 @@
-import React from 'react';
+import {React,useState,useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
+  const [name,setTextname]=useState("");
+  const [message,setMessage]=useState("");
+  const [email,setEmail]=useState("");
+  const [phone,setPhone]=useState("");
+
+  const handleform=(e)=>{
+    e.preventDefault();
+    console.log("saved changes",{name:name,email:email,message:message,phone:phone});
+    // to clear then text
+    setTextname("");
+    setMessage("");
+    setEmail("");
+    setPhone("")
+  }
   return (
     <div className='flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gray-100 p-4'>
       <div className='bg-white shadow-lg rounded-lg p-6 w-full max-w-md m-4'>
-        <form className='space-y-4'>
+        <form className='space-y-4' onSubmit={handleform}>
           <div className='flex flex-col space-y-2'>
             <label htmlFor='name' className='text-gray-700'>Name</label>
             <input
               type='text'
               id='name'
+              value={name}
               placeholder='Name'
+              onChange={(e)=>setTextname(e.target.value)}
               className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
             />
           </div>
@@ -21,7 +37,9 @@ function Contact() {
             <label htmlFor='message' className='text-gray-700'>Message</label>
             <textarea
               id='message'
+              value={message}
               placeholder='Your message'
+              onChange={(e)=>setMessage(e.target.value)}
               className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
             ></textarea>
           </div>
@@ -32,8 +50,10 @@ function Contact() {
                 <label htmlFor='email' className='text-gray-700'>Email</label>
                 <input
                   type='email'
+                  value={email}
                   id='email'
                   placeholder='Enter email'
+                  onChange={(e)=>setEmail(e.target.value)}
                   className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                 />
               </div>
@@ -41,8 +61,10 @@ function Contact() {
                 <label htmlFor='phone' className='text-gray-700'>Phone Number</label>
                 <input
                   type='tel'
+                  value={phone}
                   id='phone'
                   placeholder='Phone number'
+                  onChange={(e)=>setPhone(e.target.value)}
                   className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                 />
               </div>
