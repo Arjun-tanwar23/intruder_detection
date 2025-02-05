@@ -2,6 +2,8 @@ import React from 'react';
 import front_image from '../../assets/face_detection1.jpg';
 import demo from '../../assets/face_detection2.jpg';
 import { NavLink } from 'react-router-dom';
+import {motion} from 'framer-motion'
+
 
 
 function FirstPage() {
@@ -9,7 +11,11 @@ function FirstPage() {
     <>
       <div className="  flex flex-col md:flex-row items-center bg-gray-200 relative w-auto h-screen md:w-full md:h-screen " >
         {/* Text Section */}
-        <div className="text-center md:text-left md:w-1/2 px-6 py-6">
+        <motion.div
+        initial={{opacity:0,x:-50}}
+        animate={{opacity:1,x:0}}
+        transition={{duration:0.8}}
+        className="text-center md:text-left md:w-1/2 px-6 py-6">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 ">
               Welcome to <strong className=' hover:text-blue-800 transition-all '>Detectify</strong>
             </h1>
@@ -25,16 +31,20 @@ function FirstPage() {
           <p className="text-lg md:text-2xl font-medium hover:underline ">
             Your one-stop solution for Intruder Detection
           </p>
-        </div>
+        </motion.div>
         
         {/* Image Section */}
-        <div className="mt-6 md:mt-0 md:w-1/2 flex justify-center">
+        <motion.div 
+        initial={{opacity:0,x:100}}
+        animate={{opacity:1,x:0}}
+        transition={{duration:0.8}}
+        className="mt-6 md:mt-0 md:w-1/2 flex justify-center">
           <img
             src={front_image}
             className="rounded shadow-lg w-4/5 md:w-3/4 h-auto"
             alt="Face detection banner"
           />
-        </div>
+        </motion.div>
         
       </div>
       <hr className='w-full  '/>
