@@ -16,7 +16,7 @@ function About() {
             <motion.h2
              initial={{opacity:0,y:-50}}
              animate={{opacity:1,y:0}}
-             transition={{duration:0.8}}
+             transition={{duration:1.5}}
              className='font-semibold text-2xl text-orange-500'>
               <span className='font-bold text-4xl '>#</span>ourJourneyStart
             </motion.h2>
@@ -68,7 +68,7 @@ function About() {
         <div className='w-full h-full mt-20'>
           <motion.div 
           ref={ref}
-          initial={{opacity:0, y:50}} 
+          initial={{opacity:0, y:-50}} 
           animate={isInView ? {opacity:1, y:0}:{}}
           transition={{duration:0.8}}
           className='text-center space-y-2'>
@@ -82,7 +82,7 @@ function About() {
            ref={ref}
            initial={{opacity:0,x:-100}}
            animate={isInView ?{opacity:1,x:0}:{}}
-           transition={{duration:0.8}}
+           transition={{duration:1.5}}
            className='grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10'>
             <div className='bg-gray-100 p-4 text-gray-800 h-60 hover:bg-blue-600 group transition-all duration-300'>
               <img src={image} alt="Farm 1" className='w-full h-full object-cover rounded-lg' />

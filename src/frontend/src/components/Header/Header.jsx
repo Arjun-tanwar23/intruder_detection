@@ -1,10 +1,14 @@
-import { React, useState } from "react";
-import first_image from "../../assets/detectify_image.png";
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import first_image from '../../assets/detectify_image.png';
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import demo_image from '../../assets/avtar_image.png';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false); // For Profile Dropdown
   const [issidebar, setSidebar] = useState(false); // For Sidebar Menu
+  const user = useSelector((store) => store.user);
+  const profilePic = user?.profilePic || demo_image;
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
@@ -22,39 +26,6 @@ function Header() {
             className="w-[60px] hover:scale-125 transition-transform duration-300"
             alt="Logo"
           />
-        </div>
-
-        {/* User Profile Avatar */}
-        <div className=" hidden relative order-3">
-          {/* Profile Circle */}
-          <div
-            className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white text-xl font-bold cursor-pointer hover:scale-110 hover:bg-indigo-500 transition duration-300 ease-in-out"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            H
-          </div>
-
-          {/* Profile Dropdown Menu */}
-          <div
-            className={`fixed top-20 right-0 w-64 bg-gray-200 shadow-lg p-5 transform ${
-              isOpen ? "translate-x-0" : "translate-x-full"
-            } transition-transform duration-300 ease-in-out`}
-          >
-            <button
-              className="absolute top-4 right-4 text-gray-600"
-              onClick={() => setIsOpen(false)}
-            >
-              ✖
-            </button>
-            <ul className="mt-10">
-              <li className="p-3 border-b hover:bg-gray-100 cursor-pointer">
-                ⚙️ Settings
-              </li>
-              <li className="p-3 border-b hover:bg-gray-100 cursor-pointer">
-                🚪 Log Out
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Navigation Links (Hidden on Small Screens) */}
@@ -93,14 +64,50 @@ function Header() {
           </NavLink>
         </ul>
 
-        {/* Contact Button (Hidden on Small Screens) */}
-        <NavLink to="/contact" className="hidden sm:block">
-          <button className="px-4 py-2 text-white font-bold bg-blue-500 rounded focus:ring-2 focus:ring-blue-500 transition duration-300 hover:scale-110 hover:bg-indigo-500">
-            Contact
-          </button>
-        </NavLink>
+        {/* User Profile Avatar and Contact Button */}
+        <div className="flex items-center space-x-10">
+          <NavLink to="/contact" className="hidden sm:block">
+            <button className="px-4 py-2 text-white font-bold bg-blue-500 rounded focus:ring-2 focus:ring-blue-500 transition duration-300 hover:scale-110 hover:bg-indigo-500">
+              Contact
+            </button>
+          </NavLink>
 
-        
+          <div id="profilename" className="relative order-3">
+            {/* Profile Circle */}
+            <div
+              className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white text-xl font-bold cursor-pointer hover:scale-110 hover:bg-indigo-500 transition duration-300 ease-in-out"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <img
+                src={profilePic}
+                alt="Profile"
+                className="w-full h-full rounded-full object-cover"
+              />
+            </div>
+
+            {/* Profile Dropdown Menu */}
+            <div
+              className={`fixed top-20 right-0 w-64 bg-gray-200 shadow-lg p-5 transform ${
+                isOpen ? 'translate-x-0' : 'translate-x-full'
+              } transition-transform duration-300 ease-in-out`}
+            >
+              <button
+                className="absolute top-4 right-4 text-gray-600"
+                onClick={() => setIsOpen(false)}
+              >
+                ✖
+              </button>
+              <ul className="mt-10">
+                <li className="p-3 border-b hover:bg-gray-100 cursor-pointer">
+                  ⚙️ Settings
+                </li>
+                <li className="p-3 border-b hover:bg-gray-100 cursor-pointer">
+                  🚪 Log Out
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         {/* Sidebar (Mobile Navigation) */}
         <div

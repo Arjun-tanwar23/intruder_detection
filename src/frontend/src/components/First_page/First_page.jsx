@@ -1,12 +1,14 @@
-import React from 'react';
+import {React,useRef} from 'react';
 import front_image from '../../assets/face_detection1.jpg';
 import demo from '../../assets/face_detection2.jpg';
 import { NavLink } from 'react-router-dom';
-import {motion} from 'framer-motion'
+import {motion,useInView} from 'framer-motion'
 
 
 
 function FirstPage() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: true, margin: "-100px" });
   return (
     <>
       <div className="  flex flex-col md:flex-row items-center bg-gray-200 relative w-auto h-screen md:w-full md:h-screen " >
@@ -59,7 +61,13 @@ function FirstPage() {
            </div>
           
         </div>
-        <div className='grid grid-cols-2 sm:grid-cols-2 lg:flex lg:flex-row items-center justify-center lg:w-1/2 gap-4'>
+        <motion.div
+         ref={ref}
+         initial={{ opacity: 0,scale:0.8 }}
+         animate={isInView ? { opacity: 1, scale: 1 } : {}}
+         transition={{ duration: 0.8, ease: "easeOut" }}
+
+         className='grid grid-cols-2 sm:grid-cols-2 lg:flex lg:flex-row items-center justify-center lg:w-1/2 gap-4'>
           <div className='bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 transform transition-transform duration-300 hover:scale-105'>
             <img src={demo} className='h-24 md:w-40 md:h-32' alt="Demo" />
             <div className='text-center lg:text-center lg:ml-0 mt-4 lg:mt-4'>
@@ -84,7 +92,7 @@ function FirstPage() {
           </div>
 
           
-        </div>
+        </motion.div>
       </div>
     </>
   );

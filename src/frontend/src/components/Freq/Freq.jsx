@@ -15,7 +15,7 @@ function Freq() {
         <div>
           <button
             onClick={() => toggleAnswer(1)}
-            className="w-full text-left flex justify-between items-center p-4 bg-gray-200 rounded-lg"
+            className="w-full text-left flex justify-between items-center p-4 bg-white rounded-lg"
           >
             <span>What is Detectify?</span>
             <span id="icon-1">{openQuestion === 1 ? '▼' : '▶'}</span>
@@ -33,7 +33,7 @@ function Freq() {
         <div>
           <button
             onClick={() => toggleAnswer(2)}
-            className="w-full text-left flex justify-between items-center p-4 bg-gray-200 rounded-lg"
+            className="w-full text-left flex justify-between items-center p-4 bg-white rounded-lg"
           >
             <span>How does it work?</span>
             <span id="icon-2">{openQuestion === 2 ? '▼' : '▶'}</span>
@@ -51,7 +51,7 @@ function Freq() {
         <div>
           <button
             onClick={() => toggleAnswer(3)}
-            className="w-full text-left flex justify-between items-center p-4 bg-gray-200 rounded-lg"
+            className="w-full text-left flex justify-between items-center p-4 bg-white rounded-lg"
           >
             <span>Is it easy to set up?</span>
             <span id="icon-3">{openQuestion === 3 ? '▼' : '▶'}</span>

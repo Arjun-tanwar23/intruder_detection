@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-y">
+    <footer className="bg-gradient-to-r from-[#2193B0] to-[#6DD5ED] border-y">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           {/* Logo Section */}
@@ -22,7 +22,7 @@ export default function Footer() {
                 required
                 type="email"
                 placeholder="Enter your email"
-                className="border-2 border-gray-600 rounded-full px-4 py-2 w-full pr-20 focus:border-blue-500 outline-none"
+                className="border-2 border-black rounded-full px-4 py-2 w-full pr-20 focus:border-pink-600 outline-none"
               />
               <button
                 type="submit"
@@ -38,7 +38,7 @@ export default function Footer() {
             {/* Resources */}
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className=" font-medium">
                 <li className="mb-4">
                   <Link to="/" className="hover:underline">Home</Link>
                 </li>
@@ -54,7 +54,7 @@ export default function Footer() {
             {/* Follow Us */}
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow Us</h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className=" font-medium">
                 <li className="mb-4">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a>
                 </li>
@@ -70,7 +70,7 @@ export default function Footer() {
             {/* Legal */}
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className=" font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">Privacy Policy</a>
                 </li>
