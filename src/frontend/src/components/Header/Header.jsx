@@ -72,7 +72,7 @@ function Header() {
             </button>
           </NavLink>
 
-          <div id="profilename" className="relative order-3">
+          <div id="profilename" className="  relative order-3">
             {/* Profile Circle */}
             <div
               className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white text-xl font-bold cursor-pointer hover:scale-110 hover:bg-indigo-500 transition duration-300 ease-in-out"
